@@ -1,0 +1,37 @@
+# --domain-mode blocklist --domain-file presets/banks-safelist.txt
+#
+# Bypass stratejilerinin bu sitelere DOKUNMAMASINI saglar. Banka islemleri,
+# devlet siteleri, isteyen ozel sertifika kullanan kritik servisler icin.
+# DPI bypass paket modifikasyonu yaptigi icin bazi TLS implementasyonlari
+# (ozellikle eski Java client'lari, donanim HSM'ler vs.) handshake'i
+# reddedebilir. Risk almamak icin bu dosyaya ekle.
+
+# Bankalar
+.isbank.com.tr
+.garantibbva.com.tr
+.akbank.com
+.yapikredi.com.tr
+.ziraatbank.com.tr
+.halkbank.com.tr
+.vakifbank.com.tr
+.qnbfinansbank.com
+.denizbank.com
+.teb.com.tr
+.sekerbank.com.tr
+.fibabanka.com.tr
+.odeabank.com.tr
+
+# Devlet
+.turkiye.gov.tr
+.gib.gov.tr
+.sgk.gov.tr
+.nvi.gov.tr
+
+# Kredi karti / odeme
+.iyzico.com
+.paytr.com
+.papara.com
+
+# Saglik
+.nabiz.gov.tr
+.eraporu.saglik.gov.tr

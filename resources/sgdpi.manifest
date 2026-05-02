@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="0.1.0.0" processorArchitecture="*" name="sgdpi" type="win32"/>
+  <description>SiktirGitDPI - DPI bypass tool</description>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <!-- asInvoker: run with the privileges of the launching shell.
+           sgdpi NEEDS admin (WinDivert kernel driver), but using asInvoker
+           lets us print errors/help from a non-admin shell. The wrapper
+           scripts (run.bat) use 'runas' to elevate when actually needed. -->
+      <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Windows 10 / 11 -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>
+    </application>
+  </compatibility>
+  <!-- Force UTF-8 active codepage so std::ifstream paths and argv strings
+       carrying non-ASCII characters (e.g. Turkish "Masaüstü") work. -->
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <activeCodePage xmlns="http://schemas.microsoft.com/SMI/2019/WindowsSettings">UTF-8</activeCodePage>
+    </windowsSettings>
+  </application>
+</assembly>

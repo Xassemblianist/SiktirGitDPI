@@ -1,0 +1,46 @@
+# Build dirs
+build/
+out/
+cmake-build-*/
+x64/
+Debug/
+Release/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+CMakeSettings.json
+CMakeUserPresets.json
+
+# Compiled
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.obj
+*.o
+*.ilk
+
+# WinDivert SDK (downloaded by script)
+third_party/windivert/
+
+# Memory / AI
+memory/
+.claude/
+
+# Logs
+*.log
+sgdpi-*.log
+
+# Temp
+test_out.txt
+test_err.txt
+test_*.ps1
+
+# Release artifacts (uploaded to GitHub Releases, not repo)
+*.zip
+*.tar.gz

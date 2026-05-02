@@ -1,0 +1,7 @@
+// Resource script for MinGW builds. Embeds the UAC + UTF-8 manifest so the
+// exe (a) requests admin via UAC and (b) treats narrow-char file paths as
+// UTF-8 (otherwise paths with non-ASCII characters break std::ifstream).
+
+#include <winuser.h>
+
+1 24 "sgdpi.manifest"

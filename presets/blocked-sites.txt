@@ -1,0 +1,117 @@
+# Türkiye'de yaygın olarak DPI ile filtrelenen / yavaşlatılan siteler.
+#
+# Bu liste --domain-mode allowlist --domain-file presets/blocked-sites.txt
+# olarak kullanıldığında SADECE bu siteler için bypass devreye girer.
+# Diğer trafiğe (banka, devlet siteleri vb.) hiç dokunulmaz - daha güvenli.
+#
+# Pattern formati:
+#   exact          -> "youtube.com"
+#   *.suffix       -> "*.googlevideo.com"  (sadece alt domainler)
+#   .suffix        -> ".example.com"        (kendisi + alt domainler)
+
+# YouTube + CDN
+youtube.com
+.youtube.com
+.googlevideo.com
+.ytimg.com
+.yt.be
+.youtube-nocookie.com
+.ggpht.com
+
+# Twitter / X
+twitter.com
+.twitter.com
+x.com
+.x.com
+.twimg.com
+.t.co
+.twitpic.com
+
+# Discord
+.discord.com
+.discord.gg
+.discordapp.com
+.discordapp.net
+.discord.media
+
+# Instagram
+.instagram.com
+.cdninstagram.com
+
+# Wikipedia
+.wikipedia.org
+.wikimedia.org
+.wikidata.org
+
+# Reddit
+.reddit.com
+.redd.it
+.redditmedia.com
+.redditstatic.com
+
+# Imgur
+.imgur.com
+.imgur.io
+
+# Soundcloud
+.soundcloud.com
+.sndcdn.com
+
+# OpenAI / ChatGPT
+.openai.com
+.chatgpt.com
+.oaiusercontent.com
+
+# Twitch
+.twitch.tv
+.ttvnw.net
+.jtvnw.net
+
+# Medium
+.medium.com
+
+# Archive.org
+.archive.org
+.web.archive.org
+
+# Patreon
+.patreon.com
+
+# Pinterest
+.pinterest.com
+.pinimg.com
+
+# Tumblr
+.tumblr.com
+
+# Vimeo
+.vimeo.com
+.vimeocdn.com
+
+# Spotify (zaman zaman yavaslama)
+.spotify.com
+.scdn.co
+.spotifycdn.com
+
+# Google (CDN + servisler - bazi ISP'ler yavaslatiyor)
+.googleapis.com
+.gstatic.com
+.googlesyndication.com
+.googleusercontent.com
+
+# Cloudflare CDN'leri
+.cloudflare.com
+.cloudflareinsights.com
+.cdnjs.cloudflare.com
+
+# GitHub (nadiren engelleniyor ama CDN yavaslama var)
+.github.com
+.githubusercontent.com
+.github.io
+.githubassets.com
+
+# Steam (oyun indirme yavaslama)
+.steampowered.com
+.steamcommunity.com
+.steamstatic.com
+.steamcdn-a.akamaihd.net
